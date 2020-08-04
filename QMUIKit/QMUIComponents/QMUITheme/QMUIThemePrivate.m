@@ -24,7 +24,9 @@
 #import "UIVisualEffectView+QMUI.h"
 
 // QMUI classes
+#if __has_include("QMUIImagePickerCollectionViewCell.h")
 #import "QMUIImagePickerCollectionViewCell.h"
+#endif
 #import "QMUIAlertController.h"
 #import "QMUIButton.h"
 #import "QMUIFillButton.h"
@@ -108,7 +110,9 @@
                                        NSStringFromClass(UIImageView.class):                        @[NSStringFromSelector(@selector(image))],
                                        
                                        // QMUI classes
+                        #if __has_include("QMUIImagePickerCollectionViewCell.h")
                                        NSStringFromClass(QMUIImagePickerCollectionViewCell.class):  @[NSStringFromSelector(@selector(videoDurationLabelTextColor)),],
+                        #endif
                                        NSStringFromClass(QMUIButton.class):                         @[NSStringFromSelector(@selector(tintColorAdjustsTitleAndImage)),
                                                                                                       NSStringFromSelector(@selector(highlightedBackgroundColor)),
                                                                                                       NSStringFromSelector(@selector(highlightedBorderColor)),],
