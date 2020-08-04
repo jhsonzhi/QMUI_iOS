@@ -300,7 +300,7 @@ Pod::Spec.new do |s|
 
     ss.subspec 'QMUITheme' do |sss|
       sss.source_files = 'QMUIKit/QMUIComponents/QMUITheme/*.{h,m}'
-      sss.dependency 'QMUIKit/QMUIComponents/QMUIImagePickerLibrary'
+#      sss.dependency 'QMUIKit/QMUIComponents/QMUIImagePickerLibrary'
       sss.dependency 'QMUIKit/QMUIComponents/QMUIAlertController'
       sss.dependency 'QMUIKit/QMUIComponents/QMUIButton'
       sss.dependency 'QMUIKit/QMUIComponents/QMUIFillButton'
