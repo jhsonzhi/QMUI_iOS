@@ -337,33 +337,33 @@ Pod::Spec.new do |s|
       sss.source_files = 'QMUIKit/QMUIComponents/QMUIWindowSizeMonitor.{h,m}'
     end
 
-    ss.subspec 'QMUIZoomImageView' do |sss|
-      sss.source_files = 'QMUIKit/QMUIComponents/QMUIZoomImageView.{h,m}'
-      sss.dependency 'QMUIKit/QMUIComponents/QMUIEmptyView'
-			sss.dependency 'QMUIKit/QMUIComponents/QMUIButton'
-			sss.dependency 'QMUIKit/QMUIComponents/QMUISlider'
-      sss.dependency 'QMUIKit/QMUIComponents/QMUIPieProgressView'
-      sss.dependency 'QMUIKit/QMUIComponents/QMUIAssetLibrary'
-    end
+#    ss.subspec 'QMUIZoomImageView' do |sss|
+#      sss.source_files = 'QMUIKit/QMUIComponents/QMUIZoomImageView.{h,m}'
+#      sss.dependency 'QMUIKit/QMUIComponents/QMUIEmptyView'
+#			sss.dependency 'QMUIKit/QMUIComponents/QMUIButton'
+#			sss.dependency 'QMUIKit/QMUIComponents/QMUISlider'
+#      sss.dependency 'QMUIKit/QMUIComponents/QMUIPieProgressView'
+#      sss.dependency 'QMUIKit/QMUIComponents/QMUIAssetLibrary'
+#    end
 
-    ss.subspec 'QMUIAssetLibrary' do |sss|
-      sss.source_files = 'QMUIKit/QMUIComponents/AssetLibrary/*.{h,m}'
-      sss.weak_framework = 'Photos'
-    end
+#    ss.subspec 'QMUIAssetLibrary' do |sss|
+#      sss.source_files = 'QMUIKit/QMUIComponents/AssetLibrary/*.{h,m}'
+#     sss.weak_framework = 'Photos'
+#    end
 
-    ss.subspec 'QMUIImagePickerLibrary' do |sss|
-      sss.source_files = 'QMUIKit/QMUIComponents/ImagePickerLibrary/*.{h,m}'
-      sss.dependency 'QMUIKit/QMUIMainFrame'
-      sss.dependency 'QMUIKit/QMUIComponents/QMUIImagePreviewView'
-      sss.dependency 'QMUIKit/QMUIComponents/QMUITableViewCell'
-      sss.dependency 'QMUIKit/QMUIComponents/QMUIButton'
-      sss.dependency 'QMUIKit/QMUIComponents/QMUINavigationButton'
-      sss.dependency 'QMUIKit/QMUIComponents/QMUIAssetLibrary'
-      sss.dependency 'QMUIKit/QMUIComponents/QMUIZoomImageView'
-      sss.dependency 'QMUIKit/QMUIComponents/QMUIAlertController'
-      sss.dependency 'QMUIKit/QMUIComponents/QMUIEmptyView'
-      sss.dependency 'QMUIKit/QMUIComponents/QMUIAppearance'
-    end
+#    ss.subspec 'QMUIImagePickerLibrary' do |sss|
+#      sss.source_files = 'QMUIKit/QMUIComponents/ImagePickerLibrary/*.{h,m}'
+#      sss.dependency 'QMUIKit/QMUIMainFrame'
+#      sss.dependency 'QMUIKit/QMUIComponents/QMUIImagePreviewView'
+#      sss.dependency 'QMUIKit/QMUIComponents/QMUITableViewCell'
+#      sss.dependency 'QMUIKit/QMUIComponents/QMUIButton'
+#      sss.dependency 'QMUIKit/QMUIComponents/QMUINavigationButton'
+#      sss.dependency 'QMUIKit/QMUIComponents/QMUIAssetLibrary'
+#      sss.dependency 'QMUIKit/QMUIComponents/QMUIZoomImageView'
+#      sss.dependency 'QMUIKit/QMUIComponents/QMUIAlertController'
+#      sss.dependency 'QMUIKit/QMUIComponents/QMUIEmptyView'
+#      sss.dependency 'QMUIKit/QMUIComponents/QMUIAppearance'
+#    end
 
 
     ss.subspec 'QMUILogManagerViewController' do |sss|
