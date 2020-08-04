@@ -36,7 +36,9 @@
 #import "QMUIEmotionView.h"
 #import "QMUIEmptyView.h"
 #import "QMUIGridView.h"
+#if __has_include("QMUIImagePreviewView.h")
 #import "QMUIImagePreviewView.h"
+#endif
 #import "QMUILabel.h"
 #import "QMUIPopupContainerView.h"
 #import "QMUIPopupMenuButtonItem.h"
@@ -126,7 +128,9 @@
                                                                                                       NSStringFromSelector(@selector(detailTextLabelTextColor)),
                                                                                                       NSStringFromSelector(@selector(actionButtonTitleColor))],
                                        NSStringFromClass(QMUIGridView.class):                       @[NSStringFromSelector(@selector(separatorColor)),],
+                        #if __has_include("QMUIImagePreviewView.h")
                                        NSStringFromClass(QMUIImagePreviewView.class):               @[NSStringFromSelector(@selector(loadingColor)),],
+                        #endif
                                        NSStringFromClass(QMUILabel.class):                          @[NSStringFromSelector(@selector(highlightedBackgroundColor)),],
                                        NSStringFromClass(QMUIPopupContainerView.class):             @[NSStringFromSelector(@selector(highlightedBackgroundColor)),
                                                                                                       NSStringFromSelector(@selector(maskViewBackgroundColor)),
