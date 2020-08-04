@@ -197,16 +197,16 @@ Pod::Spec.new do |s|
       sss.source_files = 'QMUIKit/QMUIComponents/QMUIGridView.{h,m}'
     end
 
-    ss.subspec 'QMUIImagePreviewView' do |sss|
-      sss.source_files = 'QMUIKit/QMUIComponents/QMUIImagePreviewView/*.{h,m}'
-      sss.dependency 'QMUIKit/QMUIComponents/QMUIZoomImageView'
-			sss.dependency 'QMUIKit/QMUIComponents/QMUICollectionViewPagingLayout'
-			sss.dependency 'QMUIKit/QMUIComponents/QMUIEmptyView'
-			sss.dependency 'QMUIKit/QMUIComponents/QMUIPieProgressView'
-			sss.dependency 'QMUIKit/QMUIComponents/QMUIButton'
-			sss.dependency 'QMUIKit/QMUIComponents/QMUIAppearance'
-      sss.dependency 'QMUIKit/QMUIMainFrame'
-    end
+#    ss.subspec 'QMUIImagePreviewView' do |sss|
+#      sss.source_files = 'QMUIKit/QMUIComponents/QMUIImagePreviewView/*.{h,m}'
+#      sss.dependency 'QMUIKit/QMUIComponents/QMUIZoomImageView'
+#			sss.dependency 'QMUIKit/QMUIComponents/QMUICollectionViewPagingLayout'
+#			sss.dependency 'QMUIKit/QMUIComponents/QMUIEmptyView'
+#			sss.dependency 'QMUIKit/QMUIComponents/QMUIPieProgressView'
+#			sss.dependency 'QMUIKit/QMUIComponents/QMUIButton'
+#			sss.dependency 'QMUIKit/QMUIComponents/QMUIAppearance'
+#      sss.dependency 'QMUIKit/QMUIMainFrame'
+#    end
 
     ss.subspec 'QMUIMarqueeLabel' do |sss|
       sss.source_files = 'QMUIKit/QMUIComponents/QMUIMarqueeLabel.{h,m}'
@@ -310,7 +310,7 @@ Pod::Spec.new do |s|
       sss.dependency 'QMUIKit/QMUIComponents/QMUIEmotionView'
       sss.dependency 'QMUIKit/QMUIComponents/QMUIEmptyView'
       sss.dependency 'QMUIKit/QMUIComponents/QMUIGridView'
-      sss.dependency 'QMUIKit/QMUIComponents/QMUIImagePreviewView'
+#      sss.dependency 'QMUIKit/QMUIComponents/QMUIImagePreviewView'
       sss.dependency 'QMUIKit/QMUIComponents/QMUILabel'
       sss.dependency 'QMUIKit/QMUIComponents/QMUIPopupContainerView'
       sss.dependency 'QMUIKit/QMUIComponents/QMUIPopupMenuView'
